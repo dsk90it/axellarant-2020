@@ -28,29 +28,37 @@ const HeaderLeft = styled.div`
    .hamburger-icon{
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
-      height: 2px;
-      position: relative;
-      background-color: ${theme.white};
-      font-style: normal;
+      margin-top: -4px;
 
-      &:before, &:after{
-         content: "";
-         position: absolute;
-         left: 0px;
+      i{
+         display: inline-block;
+         vertical-align: middle;
          width: 20px;
          height: 2px;
+         position: relative;
          background-color: ${theme.white};
-      }
+         font-style: normal;
 
-      &:before{
-         top: -6px;
-      }
+         &:before, &:after{
+            content: "";
+            position: absolute;
+            left: 0px;
+            width: 20px;
+            height: 2px;
+            background-color: ${theme.white};
+         }
 
-      &:after{
-         bottom: -6px;
+         &:before{
+            top: -6px;
+         }
+
+         &:after{
+            bottom: -6px;
+         }
       }
    }
+
+   
    
    .logo{
       display: inline-block;
@@ -184,7 +192,7 @@ const Header = () => {
       <HeaderWrapper>
          <HeaderContainer>
             <HeaderLeft>
-               <i className="hamburger-icon" onClick={mobileMenu} />
+               <div className="hamburger-icon" onClick={mobileMenu}><i/></div>
                <a className="logo" href="/">
                   <img height="16" src="//d3lf10b5gahyby.cloudfront.net/misc/senthil/logo.png" alt="Company" />
                </a>
