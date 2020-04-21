@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components';
 import { clearFix } from '../../styles/theme';
 
-const ContainerFluidWrapper = styled.div`
+const Section = styled.section`
    ${clearFix};
    width: 100%;
    background-color: ${props => props.hasBgColor || null};
+   padding: 80px 0;
 
    ${props => props.hasBgImg && css`
       background: url(${props => props.hasBgImg}) no-repeat;
@@ -14,18 +15,18 @@ const ContainerFluidWrapper = styled.div`
    `};
 `;
 
-const ContainerFluid = ({ bgColor, bgImg, children, as}) => {
+const SectionWrapper = ({ bgColor, bgImg, children, as}) => {
    return(
-      <ContainerFluidWrapper as={as} hasBgColor={bgColor} hasBgImg={bgImg} hasFixedTop={fixedTop}>
+      <Section as={as} hasBgColor={bgColor} hasBgImg={bgImg}>
          {children}
-      </ContainerFluidWrapper>
+      </Section>
    )
 }
 
-ContainerFluid.propTypes = {
+SectionWrapper.propTypes = {
    as: PropTypes.string,
    bgColor: PropTypes.string,
    bgImg: PropTypes.string
 };
 
-export default ContainerFluid
+export default SectionWrapper

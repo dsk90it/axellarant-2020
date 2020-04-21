@@ -14,6 +14,7 @@ const HeaderWrapper = styled.header`
    display: flex;
    align-items: center;
    flex-direction: row;
+   z-index: 10;
 `;
 const HeaderContainer = styled(Container)`
    display: flex;
