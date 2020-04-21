@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { lg, theme, sm } from '../styles/theme';
+import { lg, theme, MainTitle } from '../styles/theme';
 import FeaturesList from './macros/feature-list';
 
 const HeroWrapper = styled.section`
@@ -20,15 +20,9 @@ const HeroWrapper = styled.section`
     }
 `;
 
-const HeroTitle = styled.h1`
+const HeroTitle = styled(MainTitle)`
    margin: 0 auto 24px;
    max-width: 450px;
-   font-size: 32px;
-   font-weight: ${theme.bold};
-
-   ${sm}{
-      margin-bottom: 32px;
-   }
 `;
 
 const HeroSection = () => {

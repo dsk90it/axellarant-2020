@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, sm } from '../styles/theme';
+import { Container, sm, SecondaryTitle } from '../styles/theme';
 import SectionWrapper from './micros/section-wrapper';
 
 const MapCol = styled.div`
@@ -22,18 +22,12 @@ const MapCol = styled.div`
    }
 `;
 
-const SubTitle = styled.h2`
-   margin: 0 0 24px;
-   font-weight: 400;
-   font-size: 24px;
-`;
-
 const MapSection = () => {
    return (
       <SectionWrapper>
          <Container>
             <MapCol>
-               <SubTitle>Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Mae</SubTitle>
+               <SecondaryTitle>Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Mae</SecondaryTitle>
                <p>Quo virtute diceret vituperata ea, cum eros assentior voluptatum ex, duo partem assentior no. Tempor blandit similique vim ne. Esse definitiones ea vis, putant gubergren cum eu. Ei sed torquatos adversarium, vix ad congue repudiare maiestatis. Vis quis antiopam ex, quem qualisque expetendis pri et. At quem dicat constituam sit.</p>
             </MapCol>
             <MapCol>

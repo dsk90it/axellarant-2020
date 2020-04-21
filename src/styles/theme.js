@@ -39,8 +39,6 @@ export const theme = {
    blackSecondary: '#2a2b2c',
    brown: '#171513',
    greyLight: '#f7f7f7',
-   linkColor: '',
-   linkHoverColor: '',
    white: '#ffffff',
    
    textUppercase: 'uppercase',
@@ -81,4 +79,21 @@ export const Container = styled.div`
 export const ContentWrapper = styled.div`
    ${clearFix};
    padding-top: 70px;
+`;
+
+// TYPOGRAPHY
+export const MainTitle = styled.h1`
+   margin-bottom: 24px;
+   font-size: 32px;
+   font-weight: ${theme.bold};
+
+   ${sm}{
+      margin-bottom: 32px;
+   }
+`;
+
+export const SecondaryTitle= styled.h2`
+   margin: 0 0 24px;
+   font-weight: 400;
+   font-size: 24px;
 `;
