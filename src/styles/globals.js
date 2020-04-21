@@ -36,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
    .text-center{
       text-align: center;
    }
+   .color-white{
+      color: ${theme.white};
+   }
 `;
 
 export default GlobalStyle

@@ -9,6 +9,7 @@ import Header from '../components/header';
 import HeroSection from '../components/hero';
 import MapSection from '../components/map-section';
 import Testimonials from '../components/testimonials';
+import FormSection from '../components/form';
 
 class Home extends Component {
    render(){
@@ -20,8 +21,12 @@ class Home extends Component {
             
             <ContentWrapper>
                <HeroSection />
+
                <MapSection/>
+
                <Testimonials/>
+
+               <FormSection/>
             </ContentWrapper>
          </Fragment>
       )

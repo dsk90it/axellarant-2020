@@ -6,9 +6,11 @@ import SpeechCard, { CardWrapper } from './macros/speech-card';
 
 const TestimonialsRow = styled.div`
    ${clearFix};
-
+   padding-top: 8px;
+   
    ${sm}{
       margin: 0 -20px;
+      padding-top: 16px;
    }
 `;
 const TestimonialsCol = styled.div`
