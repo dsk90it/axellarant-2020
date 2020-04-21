@@ -5,7 +5,7 @@ import { Container, SecondaryTitle, clearFix, sm } from '../styles/theme';
 import { FormGroup, FormControl } from './micros/form-elements';
 import { Button } from './micros/button';
 
-const FormWrapper = styled.form`
+const Form = styled.form`
    ${clearFix};
    margin: 0 auto;
    max-width: 840px;
@@ -36,7 +36,7 @@ const FormSection = () => {
             <SecondaryTitle className="text-center color-white">Convinced To Work With Us?</SecondaryTitle>
             <p className="text-center color-white">Company has helped agencies keep their promises to clients since 2005</p>
 
-            <FormWrapper>
+            <Form method="post">
                <FormGroup>
                   <FormControl placeholder="Fullname" />
                </FormGroup>
@@ -54,7 +54,7 @@ const FormSection = () => {
                </FormGroup>
 
                <Button>Submit</Button>
-            </FormWrapper>
+            </Form>
          </Container>
       </SectionWrapper>
    );
