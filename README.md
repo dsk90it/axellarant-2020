@@ -7,4 +7,4 @@
 5. Open your browser to [http://localhost:3000](http://localhost:3000)
 
 ## :gear:	Other Scripts
-1. Production build run `npm build`
+1. Production build run `npm run build`
